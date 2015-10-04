@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jeu - enjoyed by animals, including humans</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="">
+  <style>
+    body {
+      font-family: 'PT Sans', sans-serif;
+    }
+
+    dfn {
+      font-style: normal;
+    }
+
+    .u-counter {
+      counter-reset: definition-counter; 
+    }
+
+    .u-counter > dd:before {
+      counter-increment: definition-counter;
+      content: counter(definition-counter);
+    }
+
+    .jeu-Definition {
+      margin: 0;
+      padding-left: 20px;
+      padding-top: 6px;
+      max-width: 480px;
+    }
+
+    .jeu-Definition > dd {
+      font-size: 16px;
+      margin-left: 0;
+      display: inline;
+    }
+
+    .jeu-Definition > dd:not(.jeu-Definition-innerDefinition):hover {
+      color: deepskyblue;
+    }
+
+    .jeu-Definition > dd:before {
+      padding-right: 0.3em;
+      font-weight: 700;
+      font-size: 85%;
+    }
+
+    .jeu-Definition-word {
+      
+      font-size: 27px;
+      letter-spacing: -0.01em;
+      display: block;
+      padding-bottom: 3px;
+    }
+
+    .jeu-Definition-word dfn {
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    
+    .jeu-Definition-pronunciation {
+      position: relative;
+      transition: color 1s;
+    }
+
+    .jeu-Definition-pronunciation:after {
+      position: absolute;
+      width: 6px;
+      height: 2px;
+      content: '';
+      background-color: black;
+      display: inline-block;
+      left: 11px;
+      bottom: 23px;
+    }
+
+    .jeu-Definition:hover .jeu-Definition-pronunciation:after {
+      bottom: 24px;
+    }
+
+    .jeu-Definition-pronunciation:hover {
+      color: aquamarine;
+    }
+
+    .jeu-Definition:hover .jeu-Definition-pronunciation:hover:after {
+      bottom: 23px;
+      background-color: aquamarine;
+    }
+
+    .jeu-Definition-pronunciation:hover + .jeu-Definition-explenation  {
+      opacity: 1;
+      transition: opacity 3.6s;
+    }
+
+    .jeu-Definition-explenation {
+      color: deepskyblue;
+      font-size: 46%;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    .jeu-Definition > .jeu-Definition-innerDefinition:before {
+      padding-right: 0;
+      margin-right: -1px;
+    }
+
+    .jeu-Definition-innerDefinition > .jeu-Definition {
+      display: inline;
+    }
+
+    .jeu-Definition-innerDefinition > .jeu-Definition > dt {
+      display: inline;
+    }
+
+    .jeu-Definition-innerDefinition > dl {
+      padding-left: 0;
+    }
+
+    .jeu-Definition--triangles > dd {
+      padding-right: 0.2em;
+    }
+
+    .jeu-Definition--triangles > dd:last-child {
+      padding-right: 0
+    }
+
+    .jeu-Definition--triangles > dd:before,
+    .jeu-Definition-triangleSymbol {
+      font-size: 64%;
+      position: relative;
+      top: -0.1em;
+      padding-right: 0.2em;
+      font-weight: 400; 
+    }
+
+    .jeu-Definition--triangles > dd {
+      padding-right: 0.3em;
+    }
+
+    .jeu-Definition--triangles > dd:before {
+      content: '\25BA';       
+    }
+
+    .jeu-Definition-alternative:before {
+      display: none;
+    }
+
+    .jeu-Definition-arrowSymbol {
+      position: relative;
+      top: -0.06em;
+    }
+  </style>
+</head>
+<body>
+	<dl class="jeu-Definition u-counter">
+    <dt class="jeu-Definition-word">
+      <dfn>jeu</dfn> 
+      <span class="jeu-Definition-pronunciation">[z]</span>
+      <span class="jeu-Definition-explenation">the last letter of the Slovene alphabet</span>
+    </dt>
+    <dd class="jeu-Definition-innerDefinition">
+      <dl class="jeu-Definition jeu-Definition--triangles">
+        <dt><dfn>game:</dfn></dt>
+        <dd><strong>fun</strong>: the activity is chosen for its light-hearted character</dd>
+        <dd><strong>separate</strong>: it is circumscribed in time and place</dd>
+        <dd><strong>uncertain</strong>: the outcome of the activity is unforeseeable</dd>
+        <dd><strong>non-productive</strong>: participation does not accomplish anything useful</dd>
+        <dd><strong>governed by rules</strong>: the activity has rules that are different from everyday life</dd>
+        <dd><strong>fictitious</strong>: it is accompanied by the awareness of a different reality</dd>
+        <dd class="jeu-Definition-alternative">
+          <span class="jeu-Definition-arrowSymbol">&rarr;</span> Creative expression is art if made for its own beauty <span class="jeu-Definition-arrowSymbol">&rarr;</span> is a plaything if it is interactive <span class="jeu-Definition-arrowSymbol">&rarr;</span> If no goals are associated with it, it is a toy
+        </dd>
+      </dl>
+    </dd>
+    <dd><strong>play</strong> <strike>(in a theatre/theater)</strike>, intended for &#9733; rather than just reading</dd>
+    <dd><strong>set</strong> (of objects that belong together) In computer science, a set is an abstract data type <span class="jeu-Definition-triangleSymbol">&#9658;</span>is defined by its behavior from the point of view of a user of the data</dd>
+    <dd>manner of handling a gun</dd>
+    <dd>play (mechanics: a space between two adjacent parts to allow free movement)</dd>
+    <dd>a pipe organ stop</dd>
+    <dd>a hand of playing cards.</dd>
+  </dl>
+
+</body>
+</html>
